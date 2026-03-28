@@ -1,7 +1,9 @@
 package com.example.ecommerce.pattern.strategy;
 
-public class StandardShipping implements ShippingStrategy{
+import org.springframework.stereotype.Component;
 
+@Component
+public class StandardShipping implements ShippingStrategy{
 
     @Override
     public double calculateShipping(double price) {
